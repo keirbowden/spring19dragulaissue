@@ -1,0 +1,51 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >     
+    <ltng:require 
+                  styles="{!join(',',
+                          $Resource.dragula_3_7_2 + '/dragula.css')}"
+                  scripts="{!join(',',
+                           $Resource.dragula_3_7_2  + '/dragula.js')}"
+                  afterScriptsLoaded="{!c.doInit}" />
+    
+
+    <div aura:id="container">
+        
+        <div class="slds-text-heading--medium">Drag</div>
+        
+        <ul aura:id="from">
+            <li class="slds-p-around_xx-small">
+                <article class="slds-card">
+                    <div class="slds-card__body">
+                        <div class="slds-tile slds-tile__title">
+                            <h3><a href="javascript:void(0);">Tile 1</a></h3>
+                            <p class="slds-tile__detail">Body 1</p>
+                        </div>
+                    </div>
+                </article>
+            </li>
+            <li class="slds-p-around_xx-small">
+                <article class="slds-card">
+                    <div class="slds-card__body">
+                        <div class="slds-tile slds-tile__title">
+                            <h3><a href="javascript:void(0);">Tile 2</a></h3>
+                            <p class="slds-tile__detail">Body 2</p>
+                        </div>
+                    </div>
+                </article>
+            </li>
+            
+        </ul>
+        
+        <div class="slds-text-heading_medium">Drop</div>
+        
+        <div class="slds-panel slds-grid slds-grid--vertical slds-nowrap">
+            <ul aura:id="to">
+                <li class="slds-p-around_xx-small">
+                    <div class="slds-file-selector__dropzone" style="height: 50px">
+                        <span class="slds-file-selector__text">Drop below here</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+</aura:component>
