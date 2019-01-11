@@ -7,7 +7,7 @@
 1. Drag and drop without issues
 
 ## Spring 19 
-1. Deploy to a Winter 19 org/sandbox using `sfdx force:mdapi:deploy -d ./src -u <user> -w 10` - need the pre-release version of the plugin.
+1. Deploy to a Spring 19 org/sandbox using `sfdx force:mdapi:deploy -d ./src -u <user> -w 10` - need the pre-release version of the plugin.
 1. Add the Dragula2 component to a lightning app builder app page.
 1. Drag from top to bottom throws multiple exceptions of the following form:
 
